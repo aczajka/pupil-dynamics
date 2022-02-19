@@ -57,7 +57,7 @@ MATLAB scripts `plot_Fig12.m` and `plot_Fig13.m` plot figures shown in Figs. 12 
 ```
 @InCollection{Czajka_PAD_Handbook_2018,
   author    = {Adam Czajka and Benedict Becker},
-  title     = {{ Application of Dynamic Features of the Pupil for Iris Presentation Attack Detection}},
+  title     = {{Application of Dynamic Features of the Pupil for Iris Presentation Attack Detection}},
   booktitle = {Handbook of Biometric Anti-Spoofing (2nd Edition)},
   publisher = {Springer International Publishing AG},
   year      = {2018},
