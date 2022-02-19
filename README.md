@@ -12,7 +12,7 @@ Selected source codes for pupil dynamics-related publications.
 
 ### Handbook of Biometric Anti-Spoofing -- Presentation Attack Detection (Edition 2) (2018)
 
-#### 1. Liveness scores: `hodpad3/scores`
+#### 1. Liveness scores: `hodpad2/scores`
 
 `scores_tab1_parametricSection.csv` and `scores_tab1_dataDrivenSection.csv` files contain the scores obtained by parametric-model-based and data-driven solutions, respectively. They were used to generate results shown in Table 1.
 
@@ -24,7 +24,7 @@ Meaning of the CSV columns (corresponds to Tab. 1):
 - `Score`: classification decision (only for parametric-model-based solutions)
 - `Label`: 1 for authentic eye, 0 for odd reaction (spoof)
 
-#### 2. RNN-based models: `hodpad3/models/data-driven`
+#### 2. RNN-based models: `hodpad2/models/data-driven`
 
 The models found in this directory were trained with all data except the data from subject ID #16 (randomly selected).
 
@@ -38,7 +38,7 @@ The scrict `data_driven_model.py` also contains the code to train new models on 
 
 The code was written for Python 2.7, and uses the libraries `numpy` and `TensorFlow`.
 
-#### 3. Clynes and Kohn parametric model: `hodpad3/models/parametric`
+#### 3. Clynes and Kohn parametric model: `hodpad2/models/parametric`
 
 The scripts found in this folder allow to evaluate the parametric-based approaches for iris presentation attack detection based on pupil dynamics, as presented in the Chapter. 
 
@@ -46,7 +46,7 @@ Simply run `pad.m` in Matlab to see the classification results for an example ti
 
 These codes were tested with MATLAB 2017b.
 
-#### 4. Ploting scripts: `hodpad3/plotting`
+#### 4. Ploting scripts: `hodpad2/plotting`
 
 MATLAB scripts `readScores_tab1_parametricSection.m` and `readScores_tab1_dataDrivenSection.m` provide an easy way to read the scores used to prepare Table 1 in the Chapter.
 
