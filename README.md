@@ -12,7 +12,7 @@ Selected source codes for pupil dynamics-related publications.
 
 ### Handbook of Biometric Anti-Spoofing -- Presentation Attack Detection (Edition 2) (2018)
 
-#### `hodpad3/scores`: Presentation Attack Detection scores
+#### 1. Liveness scores: `hodpad3/scores`
 
 `scores_tab1_parametricSection.csv` and `scores_tab1_dataDrivenSection.csv` files contain the scores obtained by parametric-model-based and data-driven solutions, respectively. They were used to generate results shown in Table 1.
 
@@ -24,7 +24,7 @@ Meaning of the CSV columns (corresponds to Tab. 1):
 - `Score`: classification decision (only for parametric-model-based solutions)
 - `Label`: 1 for authentic eye, 0 for odd reaction (spoof)
 
-#### `hodpad3/models/data-driven`: Presentation Attack Detection models
+#### 2. RNN-based models: `hodpad3/models/data-driven`
 
 The models found in this directory were trained with all data except the data from subject ID #16 (randomly selected).
 
@@ -38,12 +38,19 @@ The scrict `data_driven_model.py` also contains the code to train new models on 
 
 The code was written for Python 2.7, and uses the libraries `numpy` and `TensorFlow`.
 
+#### 3. Clynes and Kohn parametric model: `hodpad3/models/parametric`
 
-### Clynes and Kohn parametric model (Matlab)
+The scripts found in this folder allow to evaluate the parametric-based approaches for iris presentation attack detection based on pupil dynamics, as presented in the Chapter. 
 
-### Recurrent Neural Network-based model (Python)
+Simply run `pad.m` in Matlab to see the classification results for an example time series extracted from the `Warsaw-BioBase-Pupil-Dynamics v2.1` database made available along with this Chapter. 
 
-### Plots
+These codes were tested with MATLAB 2017b.
+
+#### Ploting scripts: 
+
+MATLAB scripts `readScores_tab1_parametricSection.m` and `readScores_tab1_dataDrivenSection.m` provide an easy way to read the scores used to prepare Table 1 in the Chapter.
+
+MATLAB scripts `plot_Fig12.m` and `plot_Fig13.m` plot figures shown in Figs. 12 and 13 in the Chapter.
 
 ### Citation
 
@@ -61,3 +68,17 @@ The code was written for Python 2.7, and uses the libraries `numpy` and `TensorF
 }
 ```
 https://www.springer.com/us/book/9783319926261 
+
+
+### License
+
+"Application of Dynamic Features of the Pupil for Iris Presentation 
+Attack Detection" - reproducible research materials 
+(c) by Adam Czajka and Benedict Becker, September 2017
+
+Reproducible research materials added to "Application of Dynamic Features 
+of the Pupil for Iris Presentation Attack Detection" are licensed under 
+a Creative Commons Attribution 3.0 Unported License 
+(see http://creativecommons.org/licenses/by/3.0/). 
+
+Please provide the citation as detailed in **Citation** section above when using these materials.
