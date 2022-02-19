@@ -72,13 +72,8 @@ https://www.springer.com/us/book/9783319926261
 
 ### License
 
-"Application of Dynamic Features of the Pupil for Iris Presentation 
-Attack Detection" - reproducible research materials 
 (c) by Adam Czajka and Benedict Becker, September 2017
 
-Reproducible research materials added to "Application of Dynamic Features 
-of the Pupil for Iris Presentation Attack Detection" are licensed under 
-a Creative Commons Attribution 3.0 Unported License 
-(see http://creativecommons.org/licenses/by/3.0/). 
+These materials have been added to the "Application of Dynamic Features of the Pupil for Iris Presentation Attack Detection" book chapter are licensed under a Creative Commons Attribution 3.0 Unported License (see http://creativecommons.org/licenses/by/3.0/). 
 
 Please provide the citation as detailed in **Citation** section above when using these materials.
