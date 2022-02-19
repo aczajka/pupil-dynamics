@@ -2,26 +2,42 @@
 
 Selected source codes for pupil dynamics-related publications.
 
-## Dataset
+### Dataset
 
 `Warsaw-BioBase-Pupil-Dynamics v2.1` data was used in this research. Requests for a copy of this dataset should be made directly to the [Biometrics and Machine Learning Group](http://zbum.ia.pw.edu.pl/EN/node/46) at the Warsaw University of Technology.
 
-## Handbook of Biometric Anti-Spoofing -- Presentation Attack Detection (Edition 3) (2022)
+### Handbook of Biometric Anti-Spoofing -- Presentation Attack Detection (Edition 3) (2022)
 
 (comming soon -- upon acceptance of the revised chapter)
 
-## Handbook of Biometric Anti-Spoofing -- Presentation Attack Detection (Edition 2) (2018)
+### Handbook of Biometric Anti-Spoofing -- Presentation Attack Detection (Edition 2) (2018)
 
-### `hodpad3/scores`: Presentation Attack Detection scores
+#### `hodpad3/scores`: Presentation Attack Detection scores
 
-`scores_tab1_parametricSection.csv` and `scores_tab1_parametricSection.csv` files contain the scores obtained by parametric-model-based and data-driven solutions, respectively. They were used to generate results shown in Table 1.
-Meaning of the columns (corresponds to Tab. 1):
+`scores_tab1_parametricSection.csv` and `scores_tab1_dataDrivenSection.csv` files contain the scores obtained by parametric-model-based and data-driven solutions, respectively. They were used to generate results shown in Table 1.
 
-Stimulus: both, positive, negative
-Variant: SVM (linear, polynomial, radial), Logistic regression, Bagged trees, kNN (1,10)
-Node0, Node1: softmax raw scores as presented by two output nodes (only for data-driven solutions)
-Score: classification decision (only for parametric-model-based solutions)
-Label: 1 for authentic eye, 0 for odd reaction (spoof)
+Meaning of the CSV columns (corresponds to Tab. 1):
+
+- `Stimulus`: both, positive, negative
+- `Variant`: SVM (linear, polynomial, radial), Logistic regression, Bagged trees, kNN (1,10)
+- `Node0, Node1`: softmax raw scores as presented by two output nodes (only for data-driven solutions)
+- `Score`: classification decision (only for parametric-model-based solutions)
+- `Label`: 1 for authentic eye, 0 for odd reaction (spoof)
+
+#### `hodpad3/models/data-driven`: Presentation Attack Detection models
+
+The models found in this directory were trained with all data except the data from subject ID #16 (randomly selected).
+
+The models can be evaluated on the data from subject 16 (also included) using the the command:
+
+```python data_driven_model.py (light|dark|both)```
+
+The `light` argument corresponds to the positive stimulus data, the `dark` argument corresponds to the negative stimulus data, and the `both` argument corresponds to both stimuli.
+
+The scrict `data_driven_model.py` also contains the code to train new models on other subsections of the data.
+
+The code was written for Python 2.7, and uses the libraries `numpy` and `TensorFlow`.
+
 
 ### Clynes and Kohn parametric model (Matlab)
 
