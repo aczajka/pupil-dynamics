@@ -46,7 +46,7 @@ Simply run `pad.m` in Matlab to see the classification results for an example ti
 
 These codes were tested with MATLAB 2017b.
 
-#### Ploting scripts: 
+#### 4. Ploting scripts: `hodpad3/plotting`
 
 MATLAB scripts `readScores_tab1_parametricSection.m` and `readScores_tab1_dataDrivenSection.m` provide an easy way to read the scores used to prepare Table 1 in the Chapter.
 
